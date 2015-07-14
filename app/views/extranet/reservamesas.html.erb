@@ -1,0 +1,18 @@
+<html>
+ <head>
+  <title>Proto Jeff</title>
+ </head>
+ <body>
+  <table>
+  <form action="index">
+   		<h1> Reserve una mesa para sus amigos o familiares! </h1>
+   		Día a reservar: <br>
+   		<input type="date" id="f" value="dia" required> <br>
+   		Cantidad de personas a reservar: <br>
+   		<input type="number" name="personas" value="cantidad" id="n" required> <br>
+   		<input type="submit" id="b" value="Confirmar" onclick="if((ValidarNumero(document.getElementById('n').value)==true)&&(ValidarFecha(document.getElementById('f').value)==true)){alert('Pedido Enviado');document.getElementById('b').submit();}">
+  	 	<input type="button" value="Volver atrás" onclick="window.location='index';">
+  </form>
+  </table>
+ </body>
+</html>

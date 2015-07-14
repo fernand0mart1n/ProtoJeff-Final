@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+	<title>Atención personalizada</title>
+</head>
+<form method="post" action="index">
+	Número de mesa:<br>
+	<input type="number" value="nmesa"id="n" required>
+	<br>
+	<br>
+    <input type="button" value="Volver atrás" onclick="window.location='index';">
+	<input type="submit" id="b" value="Pedir mozo!!" onclick="if(ValidarNumero(document.getElementById('n').value)==true){alert('Mozo Pedido');document.getElementById('b').submit();}">
+</form>

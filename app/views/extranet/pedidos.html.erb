@@ -1,0 +1,60 @@
+<body>
+	<form>
+	<table style="float:left">
+			<div>
+				<select>
+					<option value="volvo">Pizzas</option>
+					<option value="saab">Pastas</option>
+					<option value="mercedes">Ensaladas</option>
+					<option value="audi">Postres</option>
+					<option value="audi">Bebidas</option>
+				</select>
+			
+			</div>
+		</table>
+		<table  style="float:center">
+			<div>
+			<br>
+				<tr>
+				<td>Comida</td>
+				<td>Porciones</td>		
+				<td>Precio</td>
+			</tr>
+			<tr>
+				<td>Mozzarella</td>
+				<td>8</td>		
+				<td>$ 150</td>
+				<td><input type="checkbox" id="ch1"></td>
+				<td>Cantidad:<input type="number" id="nc1"></td>
+			</tr>
+			<tr>
+				<td>Americana</td>
+				<td>8</td>		
+				<td>$ 194</td>
+				<td><input type="checkbox" id="ch2"></td>
+				<td>Cantidad:<input type="number" id="nc2"></td>
+			</tr>
+			<tr>
+				<td>Especial Ave</td>
+				<td>8</td>		
+				<td>$ 180</td>
+				<td><input type="checkbox" id="ch3"></td>
+				<td>Cantidad:<input type="number" id="nc3"></td>
+			</tr>
+			</div>
+		</table>
+		<br>
+		Nombre: Montoto
+		<br>
+		Apellido: Flores
+		<br>
+		<input type="radio" name="tipo" value="delivery" id="r1" checked>Delivery
+		<br>
+		<input type="radio" name="tipo" value="local" id="r2">Mesa
+	    <br>
+	    Numero de mesa: <input type="number" name="mesa" id="n" >Mesa <br>
+	    <br>
+	    <input type="button" value="Volver atrás" onclick="window.location='index';">
+		<input type="submit" value="Confirmar" id="s" onclick="if(ValidarCampos(document.getElementById('r1').checked,document.getElementById('r2').checked,document.getElementById('ch1').checked,document.getElementById('ch2').checked,document.getElementById('ch3').checked,document.getElementById('nc1').value,document.getElementById('nc2').value,document.getElementById('nc3').value,document.getElementById('n').value)==true){alert('Su pedido va ha ser procesado.');document.getElementById(s).submit();}">
+	</form>
+</body>

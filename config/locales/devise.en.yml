@@ -1,0 +1,60 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+en:
+  devise:
+    confirmations:
+      confirmed: "Correo confirmado."
+      send_instructions: "Recibirás instrucciones en tu bandeja para confirmar tu correo en unos minutos."
+      send_paranoid_instructions: "Si tu correo está en nuestra base de datos, recibirás instrucciones en tu bandeja para confirmar tu correo en unos minutos."
+    failure:
+      already_authenticated: "Ya estás logueado."
+      inactive: "Tu cuenta no ha sido activada todavia."
+      invalid: "%{authentication_keys} o contraseña inválidos."
+      locked: "Tu cuenta está bloqueada."
+      last_attempt: "Un intento fallido más y tu cuenta sera bloqueada."
+      not_found_in_database: "%{authentication_keys} o contraseña inválidos."
+      timeout: "La sesión expiró. Reingrese para continuar"
+      unauthenticated: "Necesitas ingresar o registrarte para continuar."
+      unconfirmed: "Debes confirmar tu correo para continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Confirmation instructions"
+      reset_password_instructions:
+        subject: "Reset password instructions"
+      unlock_instructions:
+        subject: "Unlock instructions"
+    omniauth_callbacks:
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords:
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "Recibirás instrucciones en tu email para reestablecer la contraseña."
+      send_paranoid_instructions: "Si tu correo existe en nuestra base de datos, recibirás instrucciones en tu email para reestablecer la contraseña."
+      updated: "La contraseña ha sido cambiada exitosamente."
+      updated_not_active: "La contraseña ha sido cambiada exitosamente."
+    registrations:
+      destroyed: "Adiós! Te extrañaremos :(. Te esperaremos de vuelta con los brazos abiertos."
+      signed_up: "Bienvenido!!"
+      signed_up_but_inactive: "Cuenta sin activar."
+      signed_up_but_locked: "Cuenta bloqueada."
+      signed_up_but_unconfirmed: "Un email ha sido enviado a su correo. Por favor, confirme su cuenta"
+      update_needs_confirmation: "El correo cambió correctamente. Hemos enviado un email a su bandeja para confirmar ésta acción."
+      updated: "Datos actualizados."
+    sessions:
+      signed_in: ""
+      signed_out: ""
+      already_signed_out: ""
+    unlocks:
+      send_instructions: "Recibirás instrucciones para desbloquear tu cuenta en tu correo."
+      send_paranoid_instructions: "Si tu cuenta existe, recibirás instrucciones para desbloquear tu cuenta en tu correo."
+      unlocked: "Cuenta desbloqueada. Ingresa para continuar."
+  errors:
+    messages:
+      already_confirmed: "Ya fué confirmada, intenta ingresar."
+      confirmation_period_expired: "Tiempo de vida de confirmación %{period}, por favor solicite una nueva."
+      expired: "Expirada, solicite una nueva"
+      not_found: "No encontrado"
+      not_locked: "No estaba bloqueada"
+      not_saved:
+        one: "error"
+        other: "error"

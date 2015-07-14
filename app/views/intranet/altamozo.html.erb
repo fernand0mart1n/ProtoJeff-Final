@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Proto Jeff</title>
+	</head>
+	<body>
+		<h1>Alta/Modificacion de  Mozo!</h1>
+		<form action="index">
+		<table>
+			Nombre Mozo:<br>
+			<input type="text" id="n" value="nm" required> <br>
+			Apellido Mozo:<br>
+			<input type="text" id="a" value="am" required><br>
+			Horario de trabajo:<br>
+			<input type="number" value="Horario" value="hm" id="h"><br><br>
+			<input type="button" value="Volver atras" onclick="window.location='admmozos';">
+			<input type="submit" value="Alta" onclick="if((ValidarNombre(getElementById('n').value)==true)&&(ValidarNombre(getElementById('a').value)==true)&&(ValidarHora(document.getElementById('h').value)==true)){alert('Alta Mozo');}">
+		</table>
+		</form>
+	</body>
+</html>
